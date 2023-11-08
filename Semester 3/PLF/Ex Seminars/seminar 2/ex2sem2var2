@@ -1,0 +1,15 @@
+%remove all elements that appear only once with a collector
+%removeEl([]-list, P-copy of list, C-collector, []-return list)
+%flow model = (i,i,i,o)
+
+removeEl([], _, C, C).
+removeEl([H|T], P, C, R):-
+   occ(P,H,1), !,
+   removeEl([H|T], P, C, R).
+
+removeEl([H|T], P, C, R):-
+   addTo End(C, H, NC),
+   removeEl(T, P, NC, R).
+
+main(L,R):-
+   removeEl(L, L, [], R).
