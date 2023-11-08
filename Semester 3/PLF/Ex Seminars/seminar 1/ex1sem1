@@ -1,1 +1,15 @@
+% function that returns true or false = a predicate
+% if we have a line with OR we write 2 separate lines(ex: if n==4 or n==7 we write N=4, N=7 separate)
+% if we have a line with AND we write it together
+% we have to return something!!! never return nothing 
 
+% mult(L-list, K-number, R-result list)
+% flow model(input,input,output)
+% _ = unnamed general variable, []=empty list
+% [H|T] = [Head(of the list)| Tail] - before | is a variable, after | is a list; all of this used to extract elements
+
+mulk([], _, []).
+mulk([H|T], K, R):-
+  NewH is H*K,
+  mulk(T, K, TR),
+  R=[NewH|TR].
