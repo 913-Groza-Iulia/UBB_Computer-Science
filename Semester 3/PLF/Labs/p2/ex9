@@ -1,1 +1,27 @@
+%a.
+addElem([],_,_,[]).
+
+addElem([H|T],E,P,[H,E|R]):-
+    (P is 1 ; P is 3 ; P is 7 ; P is 15),
+    !,
+    P1 is P + 1,
+    addElem(T,E,P1,R).
+
+addElem([H|T],E,P,[H|R]):-
+    P1 is P + 1,
+    addElem(T,E,P1,R).
+
+ 
+%b.
+heterList([],_,[]).
+
+heterList([H|T],E,[RA|R]):-
+    is_list(H),
+    !,
+    addElem(H,E,1,RA),
+    heterList(T,E,R).
+
+heterList([H|T],_,[H|R]):- 
+    heterList(T,H,R).
+
 
