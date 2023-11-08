@@ -1,0 +1,28 @@
+%remove all elements that appear only once
+%removeEl([]-list, P-copy of list, []-return list)
+%flow model = (i,i,o)
+
+%base case
+occ([], _, 0).
+
+occ([H|T], X, No):-
+   H = X,
+   occ(T, X, NewNo),
+   No is NewNo +1.
+
+occ([H|T], X, No):-
+   H \= X,
+   occ(T, X, No).
+
+   
+removeEl([], _, []).
+
+removeEl([H|T], P, R):-
+    occ(P, H, D),
+    D > 1,
+    removeEl(T, P, R1),
+    R = [H|R1].
+
+removeEl([H|T], P, R):-
+    occ(P, H, 1),
+    removeEl(T, P, R).
