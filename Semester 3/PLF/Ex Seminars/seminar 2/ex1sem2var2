@@ -1,0 +1,14 @@
+%compute the number of occurences of an element e in a list with a collector
+%occ([]-list, _ -the element to give, C-collector, No-result)
+%flow model = i,i,i,o
+
+%base case
+occC([], _, C, C).
+
+occC([H|T], X, C, No):-
+    H = X, !,
+    NewC is C+1,
+    occC(T, X, NewC, No).
+
+occC([H|T], X, C, No):-
+    occC(T, X, C, No).
