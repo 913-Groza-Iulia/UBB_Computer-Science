@@ -1,0 +1,6 @@
+PrgState{exeStack= stack [(int v;(v=2;print(v)))], symTable= MyDictionary{dictionary={}}, out=MyList{items=[]}, files table= MyDictionary{dictionary={}}}
+PrgState{exeStack= stack [int v, (v=2;print(v))], symTable= MyDictionary{dictionary={}}, out=MyList{items=[]}, files table= MyDictionary{dictionary={}}}
+PrgState{exeStack= stack [(v=2;print(v))], symTable= MyDictionary{dictionary={v=0}}, out=MyList{items=[]}, files table= MyDictionary{dictionary={}}}
+PrgState{exeStack= stack [v=2, print(v)], symTable= MyDictionary{dictionary={v=0}}, out=MyList{items=[]}, files table= MyDictionary{dictionary={}}}
+PrgState{exeStack= stack [print(v)], symTable= MyDictionary{dictionary={v=2}}, out=MyList{items=[]}, files table= MyDictionary{dictionary={}}}
+PrgState{exeStack= stack [], symTable= MyDictionary{dictionary={v=2}}, out=MyList{items=[2]}, files table= MyDictionary{dictionary={}}}
