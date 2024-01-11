@@ -1,0 +1,144 @@
+
+PrgState: 
+id: 3
+exeStack: stack= [(int a;(int b;(a=2+3*5;(b=a+1;print(b)))))]
+symTable: dictionary={}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 3
+exeStack: stack= [int a, (int b;(a=2+3*5;(b=a+1;print(b))))]
+symTable: dictionary={}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 3
+exeStack: stack= [int a, (int b;(a=2+3*5;(b=a+1;print(b))))]
+symTable: dictionary={}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 3
+exeStack: stack= [(int b;(a=2+3*5;(b=a+1;print(b))))]
+symTable: dictionary={a=0}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 3
+exeStack: stack= [(int b;(a=2+3*5;(b=a+1;print(b))))]
+symTable: dictionary={a=0}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 3
+exeStack: stack= [int b, (a=2+3*5;(b=a+1;print(b)))]
+symTable: dictionary={a=0}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 3
+exeStack: stack= [int b, (a=2+3*5;(b=a+1;print(b)))]
+symTable: dictionary={a=0}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 3
+exeStack: stack= [(a=2+3*5;(b=a+1;print(b)))]
+symTable: dictionary={a=0, b=0}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 3
+exeStack: stack= [(a=2+3*5;(b=a+1;print(b)))]
+symTable: dictionary={a=0, b=0}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 3
+exeStack: stack= [a=2+3*5, (b=a+1;print(b))]
+symTable: dictionary={a=0, b=0}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 3
+exeStack: stack= [a=2+3*5, (b=a+1;print(b))]
+symTable: dictionary={a=0, b=0}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 3
+exeStack: stack= [(b=a+1;print(b))]
+symTable: dictionary={a=17, b=0}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 3
+exeStack: stack= [(b=a+1;print(b))]
+symTable: dictionary={a=17, b=0}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 3
+exeStack: stack= [b=a+1, print(b)]
+symTable: dictionary={a=17, b=0}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 3
+exeStack: stack= [b=a+1, print(b)]
+symTable: dictionary={a=17, b=0}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 3
+exeStack: stack= [print(b)]
+symTable: dictionary={a=17, b=18}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 3
+exeStack: stack= [print(b)]
+symTable: dictionary={a=17, b=18}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 3
+exeStack: stack= []
+symTable: dictionary={a=17, b=18}
+out=: items={[18]}
+Files table: []
+Heap: 

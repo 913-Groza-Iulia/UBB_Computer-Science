@@ -1,0 +1,160 @@
+
+PrgState: 
+id: 4
+exeStack: stack= [(bool a;(int v;(a=True;((IF(a) THEN(v=2)ELSE(v=3));print(v)))))]
+symTable: dictionary={}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 4
+exeStack: stack= [bool a, (int v;(a=True;((IF(a) THEN(v=2)ELSE(v=3));print(v))))]
+symTable: dictionary={}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 4
+exeStack: stack= [bool a, (int v;(a=True;((IF(a) THEN(v=2)ELSE(v=3));print(v))))]
+symTable: dictionary={}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 4
+exeStack: stack= [(int v;(a=True;((IF(a) THEN(v=2)ELSE(v=3));print(v))))]
+symTable: dictionary={a=False}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 4
+exeStack: stack= [(int v;(a=True;((IF(a) THEN(v=2)ELSE(v=3));print(v))))]
+symTable: dictionary={a=False}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 4
+exeStack: stack= [int v, (a=True;((IF(a) THEN(v=2)ELSE(v=3));print(v)))]
+symTable: dictionary={a=False}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 4
+exeStack: stack= [int v, (a=True;((IF(a) THEN(v=2)ELSE(v=3));print(v)))]
+symTable: dictionary={a=False}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 4
+exeStack: stack= [(a=True;((IF(a) THEN(v=2)ELSE(v=3));print(v)))]
+symTable: dictionary={a=False, v=0}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 4
+exeStack: stack= [(a=True;((IF(a) THEN(v=2)ELSE(v=3));print(v)))]
+symTable: dictionary={a=False, v=0}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 4
+exeStack: stack= [a=True, ((IF(a) THEN(v=2)ELSE(v=3));print(v))]
+symTable: dictionary={a=False, v=0}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 4
+exeStack: stack= [a=True, ((IF(a) THEN(v=2)ELSE(v=3));print(v))]
+symTable: dictionary={a=False, v=0}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 4
+exeStack: stack= [((IF(a) THEN(v=2)ELSE(v=3));print(v))]
+symTable: dictionary={a=True, v=0}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 4
+exeStack: stack= [((IF(a) THEN(v=2)ELSE(v=3));print(v))]
+symTable: dictionary={a=True, v=0}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 4
+exeStack: stack= [(IF(a) THEN(v=2)ELSE(v=3)), print(v)]
+symTable: dictionary={a=True, v=0}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 4
+exeStack: stack= [(IF(a) THEN(v=2)ELSE(v=3)), print(v)]
+symTable: dictionary={a=True, v=0}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 4
+exeStack: stack= [v=2, print(v)]
+symTable: dictionary={a=True, v=0}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 4
+exeStack: stack= [v=2, print(v)]
+symTable: dictionary={a=True, v=0}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 4
+exeStack: stack= [print(v)]
+symTable: dictionary={a=True, v=2}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 4
+exeStack: stack= [print(v)]
+symTable: dictionary={a=True, v=2}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 4
+exeStack: stack= []
+symTable: dictionary={a=True, v=2}
+out=: items={[2]}
+Files table: []
+Heap: 
