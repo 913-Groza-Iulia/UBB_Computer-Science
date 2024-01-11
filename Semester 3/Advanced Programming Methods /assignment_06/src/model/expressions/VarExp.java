@@ -1,0 +1,33 @@
+package model.expressions;
+
+import model.ADTS.MyIDictionary;
+import model.ADTS.MyIHeap;
+import model.exceptions.MyExc;
+import model.exceptions.VarNotInSymTableError;
+import model.types.Type;
+import model.values.Value;
+
+public class VarExp implements Exp{
+    String id;
+    public VarExp(String vid) { id = vid; }
+
+    @Override
+    public Value eval(MyIDictionary<String, Value> tbl, MyIHeap<Integer, Value> hp) throws MyExc {
+        if(!tbl.containsKey(id))
+        {
+            throw new VarNotInSymTableError(id);
+        }
+        return tbl.lookUp(id); //retrieves the corresponding value+ returns it as the result of the expression.
+    }
+
+    @Override
+    public Exp deepCopy() { return new VarExp(id); }
+
+    @Override
+    public String toString(){ return id;}
+
+    @Override
+    public Type typecheck(MyIDictionary<String, Type> typeEnv) throws MyExc {
+        return typeEnv.lookUp(id);
+    }
+}

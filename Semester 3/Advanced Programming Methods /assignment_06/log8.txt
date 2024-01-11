@@ -1,0 +1,176 @@
+
+PrgState: 
+id: 7
+exeStack: stack= [(Ref int v;(new(varName='v', expression='20');(Ref Ref int a;(new(varName='a', expression='v');(print(readHeap(varName='v'));print(readHeap(varName='readHeap(varName='a')')+5))))))]
+symTable: dictionary={}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 7
+exeStack: stack= [Ref int v, (new(varName='v', expression='20');(Ref Ref int a;(new(varName='a', expression='v');(print(readHeap(varName='v'));print(readHeap(varName='readHeap(varName='a')')+5)))))]
+symTable: dictionary={}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 7
+exeStack: stack= [Ref int v, (new(varName='v', expression='20');(Ref Ref int a;(new(varName='a', expression='v');(print(readHeap(varName='v'));print(readHeap(varName='readHeap(varName='a')')+5)))))]
+symTable: dictionary={}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 7
+exeStack: stack= [(new(varName='v', expression='20');(Ref Ref int a;(new(varName='a', expression='v');(print(readHeap(varName='v'));print(readHeap(varName='readHeap(varName='a')')+5)))))]
+symTable: dictionary={v=(0, int)}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 7
+exeStack: stack= [(new(varName='v', expression='20');(Ref Ref int a;(new(varName='a', expression='v');(print(readHeap(varName='v'));print(readHeap(varName='readHeap(varName='a')')+5)))))]
+symTable: dictionary={v=(0, int)}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 7
+exeStack: stack= [new(varName='v', expression='20'), (Ref Ref int a;(new(varName='a', expression='v');(print(readHeap(varName='v'));print(readHeap(varName='readHeap(varName='a')')+5))))]
+symTable: dictionary={v=(0, int)}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 7
+exeStack: stack= [new(varName='v', expression='20'), (Ref Ref int a;(new(varName='a', expression='v');(print(readHeap(varName='v'));print(readHeap(varName='readHeap(varName='a')')+5))))]
+symTable: dictionary={v=(0, int)}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 7
+exeStack: stack= [(Ref Ref int a;(new(varName='a', expression='v');(print(readHeap(varName='v'));print(readHeap(varName='readHeap(varName='a')')+5))))]
+symTable: dictionary={v=(1, int)}
+out=: items={[]}
+Files table: []
+Heap: 1->20,
+
+PrgState: 
+id: 7
+exeStack: stack= [(Ref Ref int a;(new(varName='a', expression='v');(print(readHeap(varName='v'));print(readHeap(varName='readHeap(varName='a')')+5))))]
+symTable: dictionary={v=(1, int)}
+out=: items={[]}
+Files table: []
+Heap: 1->20,
+
+PrgState: 
+id: 7
+exeStack: stack= [Ref Ref int a, (new(varName='a', expression='v');(print(readHeap(varName='v'));print(readHeap(varName='readHeap(varName='a')')+5)))]
+symTable: dictionary={v=(1, int)}
+out=: items={[]}
+Files table: []
+Heap: 1->20,
+
+PrgState: 
+id: 7
+exeStack: stack= [Ref Ref int a, (new(varName='a', expression='v');(print(readHeap(varName='v'));print(readHeap(varName='readHeap(varName='a')')+5)))]
+symTable: dictionary={v=(1, int)}
+out=: items={[]}
+Files table: []
+Heap: 1->20,
+
+PrgState: 
+id: 7
+exeStack: stack= [(new(varName='a', expression='v');(print(readHeap(varName='v'));print(readHeap(varName='readHeap(varName='a')')+5)))]
+symTable: dictionary={a=(0, Ref int), v=(1, int)}
+out=: items={[]}
+Files table: []
+Heap: 1->20,
+
+PrgState: 
+id: 7
+exeStack: stack= [(new(varName='a', expression='v');(print(readHeap(varName='v'));print(readHeap(varName='readHeap(varName='a')')+5)))]
+symTable: dictionary={a=(0, Ref int), v=(1, int)}
+out=: items={[]}
+Files table: []
+Heap: 1->20,
+
+PrgState: 
+id: 7
+exeStack: stack= [new(varName='a', expression='v'), (print(readHeap(varName='v'));print(readHeap(varName='readHeap(varName='a')')+5))]
+symTable: dictionary={a=(0, Ref int), v=(1, int)}
+out=: items={[]}
+Files table: []
+Heap: 1->20,
+
+PrgState: 
+id: 7
+exeStack: stack= [new(varName='a', expression='v'), (print(readHeap(varName='v'));print(readHeap(varName='readHeap(varName='a')')+5))]
+symTable: dictionary={a=(0, Ref int), v=(1, int)}
+out=: items={[]}
+Files table: []
+Heap: 1->20,
+
+PrgState: 
+id: 7
+exeStack: stack= [(print(readHeap(varName='v'));print(readHeap(varName='readHeap(varName='a')')+5))]
+symTable: dictionary={a=(2, Ref int), v=(1, int)}
+out=: items={[]}
+Files table: []
+Heap: 1->20,2->(1, int),
+
+PrgState: 
+id: 7
+exeStack: stack= [(print(readHeap(varName='v'));print(readHeap(varName='readHeap(varName='a')')+5))]
+symTable: dictionary={a=(2, Ref int), v=(1, int)}
+out=: items={[]}
+Files table: []
+Heap: 1->20,2->(1, int),
+
+PrgState: 
+id: 7
+exeStack: stack= [print(readHeap(varName='v')), print(readHeap(varName='readHeap(varName='a')')+5)]
+symTable: dictionary={a=(2, Ref int), v=(1, int)}
+out=: items={[]}
+Files table: []
+Heap: 1->20,2->(1, int),
+
+PrgState: 
+id: 7
+exeStack: stack= [print(readHeap(varName='v')), print(readHeap(varName='readHeap(varName='a')')+5)]
+symTable: dictionary={a=(2, Ref int), v=(1, int)}
+out=: items={[]}
+Files table: []
+Heap: 1->20,2->(1, int),
+
+PrgState: 
+id: 7
+exeStack: stack= [print(readHeap(varName='readHeap(varName='a')')+5)]
+symTable: dictionary={a=(2, Ref int), v=(1, int)}
+out=: items={[20]}
+Files table: []
+Heap: 1->20,2->(1, int),
+
+PrgState: 
+id: 7
+exeStack: stack= [print(readHeap(varName='readHeap(varName='a')')+5)]
+symTable: dictionary={a=(2, Ref int), v=(1, int)}
+out=: items={[20]}
+Files table: []
+Heap: 1->20,2->(1, int),
+
+PrgState: 
+id: 7
+exeStack: stack= []
+symTable: dictionary={a=(2, Ref int), v=(1, int)}
+out=: items={[20, 25]}
+Files table: []
+Heap: 1->20,2->(1, int),

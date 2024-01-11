@@ -1,0 +1,80 @@
+
+PrgState: 
+id: 2
+exeStack: stack= [(int v;(v=2;print(v)))]
+symTable: dictionary={}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 2
+exeStack: stack= [int v, (v=2;print(v))]
+symTable: dictionary={}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 2
+exeStack: stack= [int v, (v=2;print(v))]
+symTable: dictionary={}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 2
+exeStack: stack= [(v=2;print(v))]
+symTable: dictionary={v=0}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 2
+exeStack: stack= [(v=2;print(v))]
+symTable: dictionary={v=0}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 2
+exeStack: stack= [v=2, print(v)]
+symTable: dictionary={v=0}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 2
+exeStack: stack= [v=2, print(v)]
+symTable: dictionary={v=0}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 2
+exeStack: stack= [print(v)]
+symTable: dictionary={v=2}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 2
+exeStack: stack= [print(v)]
+symTable: dictionary={v=2}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 2
+exeStack: stack= []
+symTable: dictionary={v=2}
+out=: items={[2]}
+Files table: []
+Heap: 

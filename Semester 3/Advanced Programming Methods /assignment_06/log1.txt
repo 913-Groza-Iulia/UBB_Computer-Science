@@ -1,0 +1,272 @@
+
+PrgState: 
+id: 1
+exeStack: stack= [(string varf;(varf=test.in;(open varf;(int varc;(reading from file varf into the variable varc;(print(varc);(reading from file varf into the variable varc;(print(varc);closing the file varf))))))))]
+symTable: dictionary={}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 1
+exeStack: stack= [string varf, (varf=test.in;(open varf;(int varc;(reading from file varf into the variable varc;(print(varc);(reading from file varf into the variable varc;(print(varc);closing the file varf)))))))]
+symTable: dictionary={}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 1
+exeStack: stack= [string varf, (varf=test.in;(open varf;(int varc;(reading from file varf into the variable varc;(print(varc);(reading from file varf into the variable varc;(print(varc);closing the file varf)))))))]
+symTable: dictionary={}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 1
+exeStack: stack= [(varf=test.in;(open varf;(int varc;(reading from file varf into the variable varc;(print(varc);(reading from file varf into the variable varc;(print(varc);closing the file varf)))))))]
+symTable: dictionary={varf= }
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 1
+exeStack: stack= [(varf=test.in;(open varf;(int varc;(reading from file varf into the variable varc;(print(varc);(reading from file varf into the variable varc;(print(varc);closing the file varf)))))))]
+symTable: dictionary={varf= }
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 1
+exeStack: stack= [varf=test.in, (open varf;(int varc;(reading from file varf into the variable varc;(print(varc);(reading from file varf into the variable varc;(print(varc);closing the file varf))))))]
+symTable: dictionary={varf= }
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 1
+exeStack: stack= [varf=test.in, (open varf;(int varc;(reading from file varf into the variable varc;(print(varc);(reading from file varf into the variable varc;(print(varc);closing the file varf))))))]
+symTable: dictionary={varf= }
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 1
+exeStack: stack= [(open varf;(int varc;(reading from file varf into the variable varc;(print(varc);(reading from file varf into the variable varc;(print(varc);closing the file varf))))))]
+symTable: dictionary={varf=test.in}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 1
+exeStack: stack= [(open varf;(int varc;(reading from file varf into the variable varc;(print(varc);(reading from file varf into the variable varc;(print(varc);closing the file varf))))))]
+symTable: dictionary={varf=test.in}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 1
+exeStack: stack= [open varf, (int varc;(reading from file varf into the variable varc;(print(varc);(reading from file varf into the variable varc;(print(varc);closing the file varf)))))]
+symTable: dictionary={varf=test.in}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 1
+exeStack: stack= [open varf, (int varc;(reading from file varf into the variable varc;(print(varc);(reading from file varf into the variable varc;(print(varc);closing the file varf)))))]
+symTable: dictionary={varf=test.in}
+out=: items={[]}
+Files table: []
+Heap: 
+
+PrgState: 
+id: 1
+exeStack: stack= [(int varc;(reading from file varf into the variable varc;(print(varc);(reading from file varf into the variable varc;(print(varc);closing the file varf)))))]
+symTable: dictionary={varf=test.in}
+out=: items={[]}
+Files table: [test.in]
+Heap: 
+
+PrgState: 
+id: 1
+exeStack: stack= [(int varc;(reading from file varf into the variable varc;(print(varc);(reading from file varf into the variable varc;(print(varc);closing the file varf)))))]
+symTable: dictionary={varf=test.in}
+out=: items={[]}
+Files table: [test.in]
+Heap: 
+
+PrgState: 
+id: 1
+exeStack: stack= [int varc, (reading from file varf into the variable varc;(print(varc);(reading from file varf into the variable varc;(print(varc);closing the file varf))))]
+symTable: dictionary={varf=test.in}
+out=: items={[]}
+Files table: [test.in]
+Heap: 
+
+PrgState: 
+id: 1
+exeStack: stack= [int varc, (reading from file varf into the variable varc;(print(varc);(reading from file varf into the variable varc;(print(varc);closing the file varf))))]
+symTable: dictionary={varf=test.in}
+out=: items={[]}
+Files table: [test.in]
+Heap: 
+
+PrgState: 
+id: 1
+exeStack: stack= [(reading from file varf into the variable varc;(print(varc);(reading from file varf into the variable varc;(print(varc);closing the file varf))))]
+symTable: dictionary={varf=test.in, varc=0}
+out=: items={[]}
+Files table: [test.in]
+Heap: 
+
+PrgState: 
+id: 1
+exeStack: stack= [(reading from file varf into the variable varc;(print(varc);(reading from file varf into the variable varc;(print(varc);closing the file varf))))]
+symTable: dictionary={varf=test.in, varc=0}
+out=: items={[]}
+Files table: [test.in]
+Heap: 
+
+PrgState: 
+id: 1
+exeStack: stack= [reading from file varf into the variable varc, (print(varc);(reading from file varf into the variable varc;(print(varc);closing the file varf)))]
+symTable: dictionary={varf=test.in, varc=0}
+out=: items={[]}
+Files table: [test.in]
+Heap: 
+
+PrgState: 
+id: 1
+exeStack: stack= [reading from file varf into the variable varc, (print(varc);(reading from file varf into the variable varc;(print(varc);closing the file varf)))]
+symTable: dictionary={varf=test.in, varc=0}
+out=: items={[]}
+Files table: [test.in]
+Heap: 
+
+PrgState: 
+id: 1
+exeStack: stack= [(print(varc);(reading from file varf into the variable varc;(print(varc);closing the file varf)))]
+symTable: dictionary={varf=test.in, varc=0}
+out=: items={[]}
+Files table: [test.in]
+Heap: 
+
+PrgState: 
+id: 1
+exeStack: stack= [(print(varc);(reading from file varf into the variable varc;(print(varc);closing the file varf)))]
+symTable: dictionary={varf=test.in, varc=0}
+out=: items={[]}
+Files table: [test.in]
+Heap: 
+
+PrgState: 
+id: 1
+exeStack: stack= [print(varc), (reading from file varf into the variable varc;(print(varc);closing the file varf))]
+symTable: dictionary={varf=test.in, varc=0}
+out=: items={[]}
+Files table: [test.in]
+Heap: 
+
+PrgState: 
+id: 1
+exeStack: stack= [print(varc), (reading from file varf into the variable varc;(print(varc);closing the file varf))]
+symTable: dictionary={varf=test.in, varc=0}
+out=: items={[]}
+Files table: [test.in]
+Heap: 
+
+PrgState: 
+id: 1
+exeStack: stack= [(reading from file varf into the variable varc;(print(varc);closing the file varf))]
+symTable: dictionary={varf=test.in, varc=0}
+out=: items={[0]}
+Files table: [test.in]
+Heap: 
+
+PrgState: 
+id: 1
+exeStack: stack= [(reading from file varf into the variable varc;(print(varc);closing the file varf))]
+symTable: dictionary={varf=test.in, varc=0}
+out=: items={[0]}
+Files table: [test.in]
+Heap: 
+
+PrgState: 
+id: 1
+exeStack: stack= [reading from file varf into the variable varc, (print(varc);closing the file varf)]
+symTable: dictionary={varf=test.in, varc=0}
+out=: items={[0]}
+Files table: [test.in]
+Heap: 
+
+PrgState: 
+id: 1
+exeStack: stack= [reading from file varf into the variable varc, (print(varc);closing the file varf)]
+symTable: dictionary={varf=test.in, varc=0}
+out=: items={[0]}
+Files table: [test.in]
+Heap: 
+
+PrgState: 
+id: 1
+exeStack: stack= [(print(varc);closing the file varf)]
+symTable: dictionary={varf=test.in, varc=0}
+out=: items={[0]}
+Files table: [test.in]
+Heap: 
+
+PrgState: 
+id: 1
+exeStack: stack= [(print(varc);closing the file varf)]
+symTable: dictionary={varf=test.in, varc=0}
+out=: items={[0]}
+Files table: [test.in]
+Heap: 
+
+PrgState: 
+id: 1
+exeStack: stack= [print(varc), closing the file varf]
+symTable: dictionary={varf=test.in, varc=0}
+out=: items={[0]}
+Files table: [test.in]
+Heap: 
+
+PrgState: 
+id: 1
+exeStack: stack= [print(varc), closing the file varf]
+symTable: dictionary={varf=test.in, varc=0}
+out=: items={[0]}
+Files table: [test.in]
+Heap: 
+
+PrgState: 
+id: 1
+exeStack: stack= [closing the file varf]
+symTable: dictionary={varf=test.in, varc=0}
+out=: items={[0, 0]}
+Files table: [test.in]
+Heap: 
+
+PrgState: 
+id: 1
+exeStack: stack= [closing the file varf]
+symTable: dictionary={varf=test.in, varc=0}
+out=: items={[0, 0]}
+Files table: [test.in]
+Heap: 
+
+PrgState: 
+id: 1
+exeStack: stack= []
+symTable: dictionary={varf=test.in, varc=0}
+out=: items={[0, 0]}
+Files table: []
+Heap: 
