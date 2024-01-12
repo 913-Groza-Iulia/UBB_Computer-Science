@@ -1,0 +1,14 @@
+Design a database that manages 'Cinema productions'. The entities of interest for the problem domain are: Actors, Movies, 
+Companies, Cinema Productions and Stage Directors. 
+- Each Movie has a name, a release date, belongs to a production "Company" and has a stage director.
+- The 'Company' has a name and an ID. 
+- A stage director can direct multiple movies, has a name and a number of awards. 
+- Each 'Cinema Production' has a title, an associated movie and a list of actors with an entry moment for each actor. 
+- Every actor has a name and a ranking.
+
+1. Write an SQL script that creates the corresponding relational data model.
+2. Create a stored procedure that receives an actor, an entry moment and a cinema production and adds the new actor 
+to the cinema production.
+3. Create a view that shows the name of the actors that appear in all cinema productions.
+4. Create a function that returns all movies that have the relase date after 2018-01-01' and have at least p productions, 
+where p is a function parameter.
