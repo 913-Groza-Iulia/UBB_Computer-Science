@@ -1,0 +1,16 @@
+Create a database for tracking operations within a bank. You will manage customers, bank accounts, cards. ATMs 
+and transactions.
+- Each customer has a name, the date of birth and may have multiple bank accounts.
+- For each bank account consider the following: the IBAN code, the current balance, the holder and the cards associated 
+  with that bank account.
+- Each card has a number, a CVV code (last 3 digits of the card number) and is associated with a bank account. 
+- An ATM has an address.
+- A transaction involves withdrawing, from an ATM, a sum of money using a card at a certain time (consider both
+  date and time). Of course, a card can be used in several transactions at the same ATM or at different ATMs and 
+  at an ATM multiple transactions can be done with multiple cards.
+  
+Requirements:
+1. Write an SQL script that creates the corresponding relational data model. 
+2. Implement a stored procedure that receives a card and deletes all the transactions related to that card.
+3. Create a view that shows the card numbers which were used in transactions at all the ATMs.
+  4. Implement a function that lists the cards (number and CVV code) that have the total transactions sum greater than 2000 lei.
