@@ -1,0 +1,18 @@
+Create a database for women shoes.
+The entities of the problem domain are: Shoes, Shoe Models, Presentation Shops and Women.
+- Each presentation shop has a name and a city.
+- Each woman has a name and a maximum amount to spend.
+- Each shoe has a price and it is part of a shoe model. Each shoe model is characterized by a name and a season. 
+   A shoe model contains one or more shoes.
+- A shoe can be found in one or more presentation shops and in a presentation shop can be one or more shoes, \
+  characterized also by the number of available shoes.
+- A woman will buy one or more shoes and a shoe will be bought by one or more women, knowing also the number 
+  of shoes bought and the spent amount.
+
+TO DOs:
+1) Write an SQL seript that creates the corresponding relational data model. 
+2) Create a stored procedure that receives a shoe, a presentation shop and the number of shoes and adds the shoe 
+   to the presentation shop. 
+3) Create a view that shows the women that bought at least 2 shoes from a given shoe model. 
+4) Create a function that lists the shoes that can be found in at least 7 presentation shops, where T>=1 is a 
+  function parameter.
