@@ -1,0 +1,18 @@
+Create a database for managing the 2023 Rugby World Cup. The entities of interest to the problem domain are: Cities, 
+Stadiums, National Teams, Players, Coaches and Games. 
+- Cities have a name.Names must be unique. 
+- Stadiums have a name and belong to a city. 
+- National teams belong to a country and have a list of players and a list of coaches. There can be only one national 
+  team per country. 
+- Players have a name. birth date, nationality, position and a flag indicating if the player is captain. 
+- Coaches have a name and nationality. 
+- The system stores information about all the games played during the World Cup: the date, the two teams involved,
+   stadium. final score, winner and a flag indicating if the final score was decided in overtime.
+
+1. Write a SQL script that creates the corresponding relational data model.
+2. Implement a stored procedure that receives the details of a game and stores the game in the database. If the 
+   two teams already played against each other on the same date, then the final score is updated.
+3. Create a view that shows the names of the stadiums where all games played were decided in
+   overtime.
+4. Implement a function that returns the number of teams that won all the games played on a stadium S with a score 
+   difference greater than R. where S and Rare function parameters.
