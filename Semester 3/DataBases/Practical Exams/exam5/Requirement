@@ -1,16 +1,14 @@
-Create a database to manage services offered by a stock exchange. The database will store data about all the 
-intermediaries involved in trading. The entities of interest to the problem domain are: Clients, Brokers, StockExchange, 
-Stocks and Bonds.
-- A client has a name and a unique identification number. Clients can work with multiple brokers. 
-- A broker has a name and a list of clients. Brokers can work with multiple stock exchanges. 
-- A stock exchange has a list of brokerage companies containing all the brokers the exchange is working with.
-- Multiple stocks or bonds can be listed on the same exchange. Both stocks and bonds have a name and 
-  the identification number of the client which bought it through a broker.
+Create a database for the Spotify application. The entities of interest to the problem domain are: Songs, Artists,
+Accounts and Playlists. 
+- Each song has a name, duration in minutes and release date. Duration must be greater than 0 and lower than 20. 
+- An artist has a name, country of origin and date of birth. 
+- Each song can have one main artist and multiple featuring artists. 
+- An account has a username and email address. Usernames must be unique. Both artists and users (accounts) can create 
+  playlists. 
+- One playlist contains multiple songs and has a name.
 
-1. Write an SQL script that creates the corresponding relational data model.
-2. Implement a stored procedure that receives a client and returns all the stocks and bonds names bought by the 
-   client and also the name of the brokerage company through which the client made the purchases.
-3. Create a view that shows all the stocks bought by the clients from a specific brokerage company and the 
-   identification numbers of those clients.
-4. Implement a function that lists the identification numbers of the clients which are investing in multiple stock 
-   exchanges.
+1. Write a SQL script that creates the corresponding relational data model.
+2. Implement a stored procedure that receives details of an account and stores the account in the database.
+3. Create a view that shows the names of the playlists that contain the most songs.
+4. Implement a function that returns the number of artists that have created more than R playlists that have a 
+   total duration greater than T, where R and T are function parameters.
