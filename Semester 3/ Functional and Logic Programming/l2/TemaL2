@@ -9,7 +9,6 @@
   )
 )
 
-
 (defun parcurg_dr (l nrNoduri nrMuchii)
   (cond
     ((null l) nil)
