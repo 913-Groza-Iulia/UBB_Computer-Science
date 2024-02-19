@@ -1,0 +1,46 @@
+;ex 9. Convert a tree of type (1) to type (2).
+;(A 2 B 0 C 2 D 0 E 1 F 0) -> (A (B) (C (D) (E (F))))
+
+(defun parcurg_st (l nrNoduri nrMuchii)
+  (cond
+    ((null l) nil)
+    ((= nrNoduri ( + 1 nrMuchii)) nil)
+    (t (cons (car l) (cons (cadr l) (parcurg_st (cddr l) (+ 1 nrNoduri) (+ (cadr l) nrMuchii)))))
+  )
+)
+
+
+(defun parcurg_dr (l nrNoduri nrMuchii)
+  (cond
+    ((null l) nil)
+    ((= nrNoduri (+ 1 nrMuchii)) l)
+    (t (parcurg_dr (cddr l) (+ 1 nrNoduri) (+ (cadr l) nrMuchii)))
+  )
+)
+
+(defun stang(l)
+  (parcurg_st (cddr l) 0 0)
+)
+
+(defun drept(l)
+  (parcurg_dr (cddr l) 0 0)
+)
+
+(defun myAppend(l p)
+  (cond
+    ((null l) p)
+    (t (cons (car l) (myAppend (cdr l) p)))
+  )
+)
+
+(defun convert_back(l)
+  (cond
+    ((null l) nil)
+    ((equal (cadr l) 2) (myAppend (list (car l)) (cons (convert_back(stang l)) (list (convert_back(drept l))))))
+    ((equal (cadr l) 1) (myAppend (list (car l)) (list (convert_back(stang l)))))
+    (t (list (car l)))
+  )
+)
+
+(setq tree '(A 2 B 0 C 2 D 0 E 1 F 0))
+(print (convert_back tree))
