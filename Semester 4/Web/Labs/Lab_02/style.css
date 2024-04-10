@@ -1,0 +1,37 @@
+.background-img {
+  width: 220px;
+  height: 200px;
+  position: absolute;
+  right: 50%;
+  bottom: 50%;
+  background-image: url("cupcake.jpg");
+  transition: background-img 1s;
+}
+
+.background-img:hover {
+  background-image: url("donut.jpg");
+}
+
+.myDiv {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.myDiv:hover {
+  animation-name: rotateAndMove;
+  animation-duration: 3s;
+}
+
+@keyframes rotateAndMove {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    left: calc(100% - 100px);
+  }
+}
