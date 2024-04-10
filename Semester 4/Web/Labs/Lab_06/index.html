@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery Dialog Example</title>
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css"
+    />
+  </head>
+  <body>
+    <button id="open-dialog">Open Dialog</button>
+
+    <div id="dialog" class="custom-dialog">
+      <p>This is the dialog content.</p>
+    </div>
+
+    <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="//code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Initialize the dialog window
+        $("#dialog").dialog({
+          autoOpen: false, // Dialog is initially hidden
+          draggable: true,
+          resizable: true,
+          // Define close event handler
+          close: function (event, ui) {
+            $(this).dialog("close"); // Close the dialog when the 'x' icon is clicked
+          },
+        });
+
+        // Open the dialog when the button is clicked
+        $("#open-dialog").on("click", function () {
+          $("#dialog").dialog("open");
+        });
+      });
+    </script>
+  </body>
+</html>
