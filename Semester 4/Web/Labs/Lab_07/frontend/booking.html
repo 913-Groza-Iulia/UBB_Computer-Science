@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hotel Room Booking</title>
+    <link rel="stylesheet" type="text/css" href="booking.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Book Rooms!</h1>
+      <form id="booking-form" action="../backend/booking.php" method="post">
+        <div class="form-group">
+          <label for="room">Rooms available:</label>
+          <select name="room[]" id="room" multiple required>
+          </select>
+          <div id="room-error" class="error"></div>
+        </div>
+        <div class="form-group">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required />
+          <div id="name-error" class="error"></div>
+        </div>
+        <div class="form-group">
+          <label for="check_in_date">Check-in Date:</label>
+          <input type="date" id="check_in_date" name="check_in_date" required />
+          <div id="check-in-date-error" class="error"></div>
+        </div>
+        <div class="form-group">
+          <label for="check_out_date">Check-out Date:</label>
+          <input
+            type="date"
+            id="check_out_date"
+            name="check_out_date"
+            required
+          />
+          <div id="check-out-date-error" class="error"></div>
+        </div>
+        <button type="submit" onclick="validateForm()">Book Room</button>
+        <button type="reset" onclick="window.location.href='./index.html'" class="cancel_bttn">Cancel</button>
+      </form>
+    </div>
+
+    <script>
+      fetch('../backend/get_rooms.php')
+      .then(response => response.json())
+      .then(data => {
+        const selectRoom = document.getElementById('room');
+        data.forEach(room => {
+          const option = document.createElement('option');
+          option.value = room.roomId;
+          option.textContent = `${room.roomName} {${room.roomCategory}} {${room.roomHotel}}`;
+          selectRoom.appendChild(option);
+        })
+      })
+      .catch(error => {console.error("Error fetching rooms: ", error)});
+
+      function validateForm() {
+        var room = document.getElementById("room").value;
+        var name = document.getElementById("name").value;
+        var checkInDate = document.getElementById("check_in_date").value;
+        var checkOutDate = document.getElementById("check_out_date").value;
+        var errors = false;
+
+        document.querySelectorAll(".error").forEach(function (element) {
+          element.innerHTML = "";
+        });
+
+        if (!room) {
+          document.getElementById("room-error").innerHTML =
+            "Please select a room.";
+          errors = true;
+        }
+
+        if (!name) {
+          document.getElementById("name-error").innerHTML =
+            "Please enter your name.";
+          errors = true;
+        }
+
+        if (new Date(checkOutDate) <= new Date(checkInDate)) {
+          document.getElementById("check-out-date-error").innerHTML =
+            "Check-out date must be after check-in date.";
+          errors = true;
+        }
+
+        if (!checkInDate) {
+          document.getElementById("check-in-date-error").innerHTML =
+            "Please select a check-in date.";
+          errors = true;
+        }
+
+        if (!checkOutDate) {
+          document.getElementById("check-out-date-error").innerHTML =
+            "Please select a check-out date.";
+          errors = true;
+        }
+
+        if (!errors) {
+          document.getElementById("booking-form").submit();
+        }
+      }
+    </script>
+  </body>
+</html>

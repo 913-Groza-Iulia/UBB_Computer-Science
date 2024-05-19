@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hotel Room Booking</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-left">
+          <form action="#" class="filter-form">
+            <select id="categoryDropdown">
+                <option value="">All Categories</option>
+                <option value="Standard">Standard</option>
+                <option value="Deluxe">Deluxe</option>
+                <!-- Add more categories as needed -->
+            </select>
+            <select id="priceDropdown">
+                <option value="">All Prices</option>
+                <option value="0-100">$0 - $100</option>
+                <option value="101-200">$101 - $200</option>
+                <option value="201-300">$201 - $300</option>
+                <!-- Add more price ranges as needed -->
+            </select>
+            <select id="hotelDropdown">
+                <option value="">All Hotels</option>
+                <option value="IuliaHotel">IuliaHotel</option>
+                <option value="LuxuryInn">LuxuryInn</option>
+                <!-- Add more hotels as needed -->
+            </select>
+            <button type="button" id="filterButton">Filter</button>
+        </form>
+        </div>
+        <div class="navbar-right">
+          <a href="./booking.html" class="btn"
+            >Book Rooms</a
+          >
+          <a
+            href="cancel_booking.html"
+            class="btn"
+            >Cancel Bookings</a
+          >
+        </div>
+      </div>
+    </nav>
+    <!-- <div class="plan-trip">Planning a trip and not knowing where to stay?</div>
+    <div class="book-now">Book a room at the IuliaHotel right now!</div> -->
+    <div class="room-grid" id="room-grid"></div>
+    <div class="pagination">
+      <button id="prevPage" disabled>Previous</button>
+      <span id="pageInfo"></span>
+      <button id="nextPage" disabled>Next</button>
+    </div>
+    <script>
+      // document.addEventListener("DOMContentLoaded", function() {
+      //     fetch('../backend/index.php')
+      //         .then(response => response.json())
+      //         .then(data => {
+      //             const roomGrid = document.getElementById('room-grid');
+      //             if (Array.isArray(data) && data.length > 0) {
+      //                 data.forEach(room => {
+      //                     const roomDiv = document.createElement('div');
+      //                     roomDiv.classList.add('room');
+      //                     roomDiv.innerHTML = `
+      //                         <div class="room-info">
+      //                             <div class="room-name">${room.roomName}</div>
+      //                             <div class="room-description">${room.roomDescription}</div>
+      //                             <div class="room-price">Price: $${room.roomPrice}</div>
+      //                             <div class="room-category">Category: ${room.roomCategory}</div>
+      //                             <div class="room-hotel">Hotel: ${room.roomHotel}</div>
+      //                         </div>
+      //                     `;
+      //                     roomGrid.appendChild(roomDiv);
+      //                 });
+      //             } else {
+      //                 roomGrid.innerHTML = '<p>No rooms available.</p>';
+      //             }
+      //         })
+      //         .catch(error => {
+      //             console.error('Error fetching room data:', error);
+      //         });
+      // });
+      document.addEventListener("DOMContentLoaded", function() {
+          let currentPage = 1;
+          const itemsPerPage = 4;
+
+          function loadRooms(page = 1) {
+              fetch(`../backend/index.php?page=${page}&items_per_page=${itemsPerPage}`)
+                  .then(response => response.json())
+                  .then(data => {
+                      const roomGrid = document.getElementById('room-grid');
+                      roomGrid.innerHTML = ''; // Clear previous rooms
+                      if (Array.isArray(data.rooms) && data.rooms.length > 0) {
+                          data.rooms.forEach(room => {
+                              const roomDiv = document.createElement('div');
+                              roomDiv.classList.add('room');
+                              roomDiv.innerHTML = `
+                                  <div class="room-info">
+                                      <div class="room-name">${room.roomName}</div>
+                                      <div class="room-description">${room.roomDescription}</div>
+                                      <div class="room-price">Price: $${room.roomPrice}</div>
+                                      <div class="room-category">Category: ${room.roomCategory}</div>
+                                      <div class="room-hotel">Hotel: ${room.roomHotel}</div>
+                                  </div>
+                              `;
+                              roomGrid.appendChild(roomDiv);
+                          });
+
+                          // Update pagination controls
+                          document.getElementById('pageInfo').textContent = `Page ${data.current_page} of ${Math.ceil(data.total_items / data.items_per_page)}`;
+                          document.getElementById('prevPage').disabled = data.current_page === 1;
+                          document.getElementById('nextPage').disabled = data.current_page === Math.ceil(data.total_items / data.items_per_page);
+                          currentPage = data.current_page;
+                      } else {
+                          roomGrid.innerHTML = '<p>No rooms available.</p>';
+                      }
+                  })
+                  .catch(error => {
+                      console.error('Error fetching room data:', error);
+                  });
+          }
+
+          document.getElementById('prevPage').addEventListener('click', () => {
+              if (currentPage > 1) {
+                  loadRooms(currentPage - 1);
+              }
+          });
+
+          document.getElementById('nextPage').addEventListener('click', () => {
+              loadRooms(currentPage + 1);
+          });
+
+          loadRooms();
+      });
+  </script>
+  </body>
+</html>
